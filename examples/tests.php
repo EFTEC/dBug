@@ -5,7 +5,7 @@ namespace dBug\tests;
 ini_set('display_errors', 1);
 error_reporting(E_ALL ^ E_NOTICE);
 header('Content-Type: text/html;charset=utf-8;');
-include_once(__DIR__ . '/dBug.php');
+include_once(__DIR__ . '/../dBug.php');
 
 use dBug\dBug;
 use Exception;
