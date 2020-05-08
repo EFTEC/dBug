@@ -1,32 +1,45 @@
 dBug
 ====
-my mod of dBug
-A debug output library which is used to visualize different datatypes.
-Initially was developed by ospinto.
+A debug output library which is used to visualize different datatypes.  
+** It is an alternative to var_dump**
 
-For more info visit [https://kolanich.github.com/dBug/]
+Initially was developed by ospinto and updated by kolanich
 
 [![openhub stats](https://openhub.net/p/php-dbug/widgets/project_partner_badge.gif)](https://openhub.net/p/php-dbug)
 
-## This fork 2020
+![](docs/comparison.jpg)
 
-This forks adds the changes from kolanich and ospinto.
+## About this fork 
 
-It also adds a new functionality, to be able to show the values without the variable types.
+### 7 May 2020
+
+* This fork adds the changes from kolanich and ospinto.  
+* It also adds a new functionality, to be able to show the values without the variable types.
+* Doxigen is removed. Instead, it used phpdoc (it's more standard)  
+* Updated composer.json
+* Reformatted .php file
+* Adding use to classes.  
+* Removed unused variables and fields.
+* Refactored some methods and some for are converted into foreach.
 
 Usage:
 
 ```php
-new dBug\dBug(new Vegetable("spinach"));
+new dBug\dBug($someVariable);
 ```
 
 
 
 
 ```php
-new dBug\dBug(new Vegetable("spinach"),'',false,false);
+new dBug\dBug($someVariable,'',false,false);
 ```
 
+## Installing without Composer.
+
+* Copy dBug.php in some folder.   
+* Include in your code: include 'dBug.php'; 
+* Call it: new dBug\dBug($variable);  
 
 
 ## Installing this version via Composer
