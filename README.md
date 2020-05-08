@@ -18,9 +18,9 @@ It is a comparison between dBug and var_dump:
 
 ### 7 May 2020
 
-* This fork adds the changes from kolanich and ospinto.  
+* This fork adds the changes from kolanich and ospinto.  (I'm not pulling back because I removed some features)
 * It also adds a new functionality, to be able to show the values without the variable types.
-* Doxigen is removed. Instead, it used phpdoc (it's more standard)  
+* Doxigen is removed. Instead, it used phpdoc (it's more standard). I also removed all references to it.   
 * Updated composer.json
 * Reformatted .php file
 * Adding use to classes.  
