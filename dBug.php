@@ -39,6 +39,7 @@ use Exception;
 use Iterator;
 use PDOStatement;
 use ReflectionClass;
+use ReflectionException;
 use ReflectionObject;
 use ReflectionProperty;
 use SQLite3Result;
@@ -67,7 +68,7 @@ class dBug
 	 * @param string $forceType type to marshall $var to show
 	 * @param boolean $bCollapsed should output be collapsed
 	 * @param bool $varType
-	 * @throws \ReflectionException
+	 * @throws ReflectionException
 	 * @noinspection PhpUnhandledExceptionInspection
 	 */
 	public function __construct($var, $forceType = "", $bCollapsed = false, $varType = true) {
@@ -128,13 +129,13 @@ class dBug
 		}
 	}
 
-	/**
-	 * name rendering functions
-	 * used to make tables representing different variables
-	 */
-	//!@{
 
-	//!creates the main table header
+    //<editor-fold desc="name rendering functions">
+    /**
+     * name rendering functions
+     * used to make tables representing different variables
+     */
+    //!creates the main table header
 	/**
 	 * @param string $type name of the style of the header cell
 	 * @param string $header the text of the header cell
@@ -246,13 +247,11 @@ class dBug
 				break;
 		}
 	}
+    //</editor-fold>
 
-	/**
-	 * name functions for rendering different types
-	 */
-	//!@{
 
-	//!renders NULL as red-pink rectangle
+    //<editor-fold desc="name functions for rendering different types">
+    //!renders NULL as red-pink rectangle
 	public function varIsNULL() {
 		$this->makeTableHeader('false', 'NULL');
 		echo '</table>';
@@ -445,6 +444,7 @@ class dBug
 	/**
 	 * @name functions for rendering different resources
 	 */
+    //</editor-fold>
 	//!@{
 
 	//!shows information about curl easy handles
