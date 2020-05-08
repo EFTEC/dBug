@@ -8,8 +8,6 @@ It also allows, variables, arrays, objects, etc.
 
 Initially was developed by ospinto and updated by kolanich
 
-[![openhub stats](https://openhub.net/p/php-dbug/widgets/project_partner_badge.gif)](https://openhub.net/p/php-dbug)
-
 It is a comparison between dBug and var_dump:
 
 ![](docs/comparison.jpg)
