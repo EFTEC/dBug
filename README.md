@@ -2,11 +2,13 @@ dBug
 ====
 A debug output library which is used to visualize different datatypes.  
 
-It is an alternative to var_dump()   
+It is an alternative to var_dump() that only requires a simple file and no external dependency.
 
 Initially was developed by ospinto and updated by kolanich
 
 [![openhub stats](https://openhub.net/p/php-dbug/widgets/project_partner_badge.gif)](https://openhub.net/p/php-dbug)
+
+It is the comparison between dBug and var_dump
 
 ![](docs/comparison.jpg)
 
