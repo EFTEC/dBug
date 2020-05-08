@@ -1,31 +1,45 @@
 {
-	"name" : "KOLANICH/dBug",
-	"type" : "library",
-	"description" : "A debug output library which is used to visualize different datatypes.",
-	"keywords" : ["debug", "output", "table", "visualization","cfdump","ColdFusion"],
-	"homepage" : "https://github.com/KOLANICH/dBug",
-	"license" : "GPL-2.0",
-	"authors" : [{
-			"name" : "KOLANICH",
-			"homepage" : "https://github.com/KOLANICH",
-			"role" : "Developer"
-		}, {
-			"name" : "Kwaku 'ospinto' Otchere",
-			"email" : "ospinto@hotmail.com",
-			"homepage" : "http://dbug.ospinto.com/",
-			"role" : "Former author"
-		}
-	],
-	"require" : {
-		"php" : ">=5.3",
-		"ext-Reflection" : "*"
+  "name": "eftec/dBug",
+  "type": "library",
+  "description": "A debug output library which is used to visualize different datatypes.",
+  "keywords": [
+	"debug",
+	"output",
+	"table",
+	"visualization",
+	"cfdump",
+	"ColdFusion"
+  ],
+  "homepage": "https://github.com/eftec/dBug",
+  "license": "GPL-2.0",
+  "authors": [
+	{
+	  "name": "Jorge",
+	  "homepage": "https://github.com/eftec",
+	  "role": "Developer"
 	},
-	"support" : {
-		"issues" : "https://github.com/KOLANICH/dBug/issues"
+	{
+	  "name": "KOLANICH",
+	  "homepage": "https://github.com/KOLANICH",
+	  "role": "Developer"
 	},
-	"autoload" : {
-		"classmap" : [
-			"dBug.php"
-		]
+	{
+	  "name": "Kwaku 'ospinto' Otchere",
+	  "email": "ospinto@hotmail.com",
+	  "homepage": "http://dbug.ospinto.com/",
+	  "role": "Former author"
 	}
+  ],
+  "require": {
+	"php": ">=5.7",
+	"ext-Reflection": "*"
+  },
+  "support": {
+	"issues": "https://github.com/eftec/dBug/issues"
+  },
+  "autoload": {
+	"classmap": [
+	  "dBug.php"
+	]
+  }
 }
