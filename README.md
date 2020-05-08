@@ -1,7 +1,8 @@
 dBug
 ====
 A debug output library which is used to visualize different datatypes.  
-** It is an alternative to var_dump**
+
+It is an alternative to var_dump()   
 
 Initially was developed by ospinto and updated by kolanich
 
@@ -21,6 +22,7 @@ Initially was developed by ospinto and updated by kolanich
 * Adding use to classes.  
 * Removed unused variables and fields.
 * Refactored some methods and some for are converted into foreach.
+* docs and examples removed from non-dev installation (.gitattributes)
 
 Usage:
 
@@ -28,8 +30,7 @@ Usage:
 new dBug\dBug($someVariable);
 ```
 
-
-
+Or without variable types
 
 ```php
 new dBug\dBug($someVariable,'',false,false);
