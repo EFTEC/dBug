@@ -4,11 +4,13 @@ A debug output library which is used to visualize different datatypes.
 
 It is an alternative to var_dump() that only requires a simple file and no external dependency.
 
+It also allows, variables, arrays, objects, etc.
+
 Initially was developed by ospinto and updated by kolanich
 
 [![openhub stats](https://openhub.net/p/php-dbug/widgets/project_partner_badge.gif)](https://openhub.net/p/php-dbug)
 
-It is the comparison between dBug and var_dump
+It is a comparison between dBug and var_dump:
 
 ![](docs/comparison.jpg)
 
@@ -26,11 +28,24 @@ It is the comparison between dBug and var_dump
 * Refactored some methods and some for are converted into foreach.
 * docs and examples removed from non-dev installation (.gitattributes)
 
-Usage:
+Usage with variables:
 
 ```php
 new dBug\dBug($someVariable);
 ```
+
+Forcing the type :
+
+```php
+new dBug\dBug($someVariable,'array');
+```
+
+Default collapsed :
+
+```php
+new dBug\dBug($someVariable,'array',true);
+```
+
 
 Or without variable types
 
